@@ -17,3 +17,9 @@ The aim of our project is to explore the patterns in the real estate market, mai
   * How does proximity to parks affect home price
   * How do local schools affect home price
   * What other factors have a large impact
+
+
+
+
+# Acknowledgment
+Single family home value data (RawSingleFamily_Neighborhood.csv) was downloaded from https://www.zillow.com/research/data/
