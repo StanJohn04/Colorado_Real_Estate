@@ -15,5 +15,5 @@ The aim of our project is to explore the patterns in the real estate market, mai
 # Questions to be answered
   * How does healthcare affect home price
   * How does proximity to parks affect home price
-  * How does locale schools affect home price
+  * How do local schools affect home price
   * What other factors have a large impact
