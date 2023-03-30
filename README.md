@@ -22,4 +22,7 @@ The aim of our project is to explore the patterns in the real estate market, mai
 
 
 # Acknowledgment
-Single family home value data (RawSingleFamily_Neighborhood.csv) was downloaded from https://www.zillow.com/research/data/
+The following data was downloaded from https://www.zillow.com/research/data/:
+ * ZHVI Single Family Homes (RawSingleFamily_Neighborhood.csv)
+ * ZHVI All Homes - Top Tier (RawTopTierHomes_TimeSeries_City.csv)
+ * ZHVI All Homes - Bottom Tier (RawBottomTierHomes_TimeSeries_City.csv)
