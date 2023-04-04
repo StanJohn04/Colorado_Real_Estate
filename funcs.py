@@ -83,33 +83,54 @@ def coord_search(city_list,state_abv):
 
 ### multi_serach() is a work in progress... ###
 
-# search_cats = ['healthcare.dentist','healthcare.dentist.orthodontics','healthcare.hospital','healthcare.pharmacy']
-# def multi_serach(df,catlist):    
-#     base_url = 'https://api.geoapify.com/v2/places?'
-#     radius = int(input("Radius: "))
-#     params = {
-#         'apiKey': geoapify_key,
-#         'limit':500
-#     }
+def multi_search(df,catlist):
+    from config import geoapify_key
+    import pandas as pd
+    import requests    
+    import time
 
-#     listname = []
+    base_url = 'https://api.geoapify.com/v2/places?'
+    radius = int(input("Radius: "))
+    params = {
+        'apiKey': geoapify_key,
+        'limit':500
+    }
 
-#     for cat in catlist:
+    total_requests = len(df)*len(catlist)
+    counter = 0
+    listname = []
+
+    print(f"Starting Data Requests for {len(catlist)} categories!")
+    print(f"Total requests: {total_requests}")
+    print("-------------------------")
+
+    for cat in catlist:
             
-#         params['categories'] = cat
-        
-#         for index, row in df.iterrows():
-#             lat = row['Latitude']
-#             lon = row['Longitude']
+        params['categories'] = cat
+
+        for index, row in df.iterrows():
+            counter += 1
+            if counter % 50 == 0 and counter > 0:
+                print(f"{counter} record(s) processed of {total_requests}.")
+            
+            lat = row['Latitude']
+            lon = row['Longitude']
     
-#             params['bias'] = f'proximity:{lon},{lat}'
-#             params['filter'] = f'circle:{lon},{lat},{radius}'
+            params['bias'] = f'proximity:{lon},{lat}'
+            params['filter'] = f'circle:{lon},{lat},{radius}'
             
-#             data = requests.get(base_url, params).json()
+            response = requests.get(base_url, params)
+            data = response.json()
+            if response.status_code == 200:
+                df.loc[index, f'{cat}'] = len(data['features'])
             
-#             listname.append({'City':row['City'], f"Number of {cat}":len(data['features'])})
-            
-#             print(f"{row['City']}:{len(data['features'])} {cat}")
-            
-#     list_df = pd.DataFrame(listname)
-#     return list_df
+                print(f"{row['City']}:{len(data['features'])} {cat}")
+                time.sleep(1)
+            else:
+                print(f"Reponse Status:{response.status_code}")
+                print(f"skipping {cat} for {row['City']}...")
+                continue
+    print("-------------------------")
+    print("Data Retrieval Complete")
+    print("-------------------------")
+    return df
