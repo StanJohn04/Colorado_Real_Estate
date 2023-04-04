@@ -134,3 +134,23 @@ def multi_search(df,catlist):
     print("Data Retrieval Complete")
     print("-------------------------")
     return df
+
+
+def linreg(x,y,xlabel):
+    from scipy.stats import linregress
+    import numpy as np
+    import matplotlib.pyplot as plt
+
+    (slope, intercept, rvalue, pvalue, stderr) = linregress(x,y)
+    
+    regress_values = x*slope + intercept
+    lin_eq = "y = " + str(round(slope,2)) + "x + " + str(round(intercept,2))
+    
+    plt.scatter(x,y)
+    plt.plot(x,regress_values,"red")
+    
+    plt.xlabel(xlabel)
+    plt.ylabel('Typical Home Price (Single Family)')
+    
+    print(f"The r-value is: {rvalue}")
+    print(f"{lin_eq}")
