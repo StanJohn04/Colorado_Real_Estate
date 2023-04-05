@@ -6,11 +6,11 @@ The aim of our project is to explore the patterns in the real estate market, mai
 
 
 # Team Members
-  * Stan Johnson
-  * Brian Haynes
-  * Jennasis Escobar
-  * Kelsey Abbey
-  * Toan Nguyen
+  * [Stan Johnson](https://github.com/StanJohn04)
+  * [Brian Haynes](https://github.com/brianphaynes)
+  * [Jennasis Escobar](https://github.com/jenntruly)
+  * [Kelsey Abbey](https://github.com/kelseyabbey)
+  * [Toan Nguyen](https://github.com/Toan88Nguyen)
 
 # Questions to be answered
   * How does healthcare affect home price
