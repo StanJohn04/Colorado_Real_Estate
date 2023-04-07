@@ -52,6 +52,15 @@ The aim of our project is to explore the patterns in the real estate market, mai
 
 # University Data
 
+- Radius = 10 km
+
+![University vs  home price](https://user-images.githubusercontent.com/120751287/230527006-0de369f2-981e-46dc-ab8f-2e7ab29a5cd5.png)
+
+- Using plot_linear_regression, it was found that the r-value is: -0.2977860076652728.
+
+![Number of University per City in Colorado](https://user-images.githubusercontent.com/120751287/230526978-d6998971-90f9-4075-9f55-f1aee471a1ff.png)
+
+- Per the bar chart, Colorado Spring has 31 University vs Breckenridge and Frisco with zero. Base on my finding, a strong demand for a good University nearby can drive property values higher. Also, I believe there are limitation to this dataset. In future project, I would expand my supported categories to “education.school” instead of limiting it to “education.university”
 
 # Coffee Shop Data
 -   Radius = 10 km
