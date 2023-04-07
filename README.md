@@ -55,6 +55,9 @@ The aim of our project is to explore the patterns in the real estate market, mai
 ![image](https://user-images.githubusercontent.com/124820451/230524315-ba2e32b8-48ce-45d3-9485-81e2de22ccf3.png)
 
 -	We found that there were fewer coffee shops where the housing prices were higher, and more coffee shops where the typical single-family home price was lower.
+
+![Screen Shot 2023-04-06 at 7 55 48 PM](https://user-images.githubusercontent.com/124820451/230524935-9579e870-240d-4ee0-9a72-e36d38e611c2.png)
+
 -	The results from the API are not entirely what we thought they would be.
 -	For example, the data states that there is only 1 coffee shop in Breckenridge.  We know that there are more.  This brings up questions like, “what is classified as a coffee shop?”
 -	Given more time, we would like to dig deeper into what data the API is pulling and what specifically defines each supported key in the categories from geoapify.
