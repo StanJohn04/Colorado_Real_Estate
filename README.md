@@ -31,7 +31,14 @@ The aim of our project is to explore the patterns in the real estate market, mai
 # University Data
 
 
-# Coffe Shop Data
+# Coffee Shop Data
+-   Radius = 10 km
+-   Using plot_linear_regression, it was found that the r-value is -0.25763.  This would indicate that coffee shops are not very strongly correlated to typical single-family home price.
+-	We found that there were fewer coffee shops where the housing prices were higher, and more coffee shops where the typical single-family home price was lower.
+-	The results from the API are not entirely what we thought they would be.
+-	For example, the data states that there is only 1 coffee shop in Breckenridge.  We know that there are more.  This brings up questions like, “what is classified as a coffee shop?”
+-	Given more time, we would like to dig deeper into what data the API is pulling and what specifically defines each supported key in the categories from geoapify.
+
 
 
 # Next Steps
