@@ -11,7 +11,7 @@ The aim of our project is to explore the patterns in the real estate market, mai
   * What other factors have a large impact
 
 # Data Collection and Cleanup
-
+  * We got the Colorado Typlical Home Value data from Zillow Research & Data. Zillow uses the Zillow Home Value Index (ZHVI) to calculate typical home values at  different geographical levels. More information about ZHVI can be found [here](https://www.zillow.com/research/data/)
 
 # Typical Home Value of Colorado Cities - Time Series
 

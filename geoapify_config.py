@@ -1,0 +1,1 @@
+geoapify_api_key = "7966c735ed4a4847979040df361e1d41"
