@@ -11,10 +11,24 @@ The aim of our project is to explore the patterns in the real estate market, mai
   * What other factors have a large impact
 
 # Data Collection and Cleanup
-  * We got the Colorado Typlical Home Value data from Zillow Research & Data. Zillow uses the Zillow Home Value Index (ZHVI) to calculate typical home values at  different geographical levels. More information about ZHVI can be found [here](https://www.zillow.com/research/data/)
-
+  * We got the Colorado Typical Home Value data from Zillow Research & Data. Zillow uses the Zillow Home Value Index (ZHVI) to calculate typical home values at  different geographical levels. More information about ZHVI can be found [here](https://www.zillow.com/research/data/)
+  
+  * After the CSV was read in, some cleanup needed to be done:
+    * DataFrame was reduced to only CO entries
+    * Data was grouped by City
+    * At this point a new DataFrame was created containing the 19 Colorado Cities and their corresponding home value data for the most recent month available (02-2023)
+    * This process was completed for Single Family, Top Tier, and Bottom Tier data.
+    
+  * Using this DataFrame, we made requests to the Geoapify API and stored the latitude and longitude of each city.
+  
+  ![image](https://user-images.githubusercontent.com/121142680/230521718-1d408748-e3f8-4ddf-9914-c34eadefbc9e.png)
+  
+  * Using the coordinates from each city we were able to utilize the Geoapify Places API to get data on different categories and then compare them to home values
+  
 # Typical Home Value of Colorado Cities - Time Series
+  * This graph shows that home value in Colorado has been trending upward, with the rate of increase seeming to speed up starting in 2020.
 
+![image](https://user-images.githubusercontent.com/121142680/230521971-6fdcd853-319e-400c-bbf3-9e95f195bef6.png)
 
 # Calculating R-Values
 
