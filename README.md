@@ -53,12 +53,13 @@ The aim of our project is to explore the patterns in the real estate market, mai
 # Healthcare Data
 •	we defined healthcare base on geoapify definition. Which is define as places that provide healthcare services such as hospitals, clinics, dentist, and pharmacies
 
- ![image](https://user-images.githubusercontent.com/11607777/230525887-2007154f-20e4-4d45-bc3f-6886ed1b0e1a.png)
+![image](https://user-images.githubusercontent.com/121142680/230945125-c0d31beb-537d-4dd2-8ecf-493269d3042d.png)
 
-•	Radius 6 miles 
-•	Using plot_linear_regression, it was found that the r-value is -0.49 or a 49% chance that the value of homes decreases as the number of healthcare facilities increases.
+•	Radius 10 miles 
+•	Using plot_linear_regression, it was found that the r-value is -0.24 or a 25% chance that the value of homes decreases as the number of healthcare facilities increases.
 
-![image](https://user-images.githubusercontent.com/11607777/230525845-f313ee00-e742-4bd3-ab32-1cd788b6e077.png)
+![image](https://user-images.githubusercontent.com/121142680/230945188-911c4a1b-b2c5-430d-b4de-2fbb747ff98d.png)
+
 
 •	Giving more time we would look at access to healthcare in relation to communities instead of cities. 
 
