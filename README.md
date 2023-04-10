@@ -31,9 +31,20 @@ The aim of our project is to explore the patterns in the real estate market, mai
 ![image](https://user-images.githubusercontent.com/121142680/230521971-6fdcd853-319e-400c-bbf3-9e95f195bef6.png)
 
 # Calculating R-Values
+  * We used pandas to read the categories table from Geoapify Places API into our notebook and we used that together with a for loop to make a requests for every category. We then calculated the r-value using linregress to determine which categories has the strongest correlation
+
+![image](https://user-images.githubusercontent.com/121142680/230936813-de48d539-d0dd-43e7-bdfd-e9d256be4a40.png)
+![image](https://user-images.githubusercontent.com/121142680/230937101-9bdbc6f3-a3e5-4a31-97df-10d10335d944.png)
 
 
 # Park Data
+  * Radius 5 km
+    * We chose a smalled radius for parks because of the overwhelming number of parks in the larger cities.
+    
+   ![image](https://user-images.githubusercontent.com/121142680/230937856-309ae78d-8a65-4903-a9b1-166a6a9b27da.png)
+  * Using a linear regression the r-value was calculated ar -0.15. This suggests that the number of parks in a city is very loosley correlated with home value
+  
+  ![image](https://user-images.githubusercontent.com/121142680/230938408-d55d4b9a-3954-4450-830d-639479c1169a.png)
 
 
 # Mountain Data
@@ -41,11 +52,13 @@ The aim of our project is to explore the patterns in the real estate market, mai
 
 # Healthcare Data
 •	we defined healthcare base on geoapify definition. Which is define as places that provide healthcare services such as hospitals, clinics, dentist, and pharmacies
-•	 ![image](https://user-images.githubusercontent.com/11607777/230525887-2007154f-20e4-4d45-bc3f-6886ed1b0e1a.png)
+
+ ![image](https://user-images.githubusercontent.com/11607777/230525887-2007154f-20e4-4d45-bc3f-6886ed1b0e1a.png)
 
 •	Radius 6 miles 
 •	Using plot_linear_regression, it was found that the r-value is -0.49 or a 49% chance that the value of homes decreases as the number of healthcare facilities increases.
-•	 ![image](https://user-images.githubusercontent.com/11607777/230525845-f313ee00-e742-4bd3-ab32-1cd788b6e077.png)
+
+![image](https://user-images.githubusercontent.com/11607777/230525845-f313ee00-e742-4bd3-ab32-1cd788b6e077.png)
 
 •	Giving more time we would look at access to healthcare in relation to communities instead of cities. 
 
