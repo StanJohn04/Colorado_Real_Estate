@@ -48,6 +48,21 @@ The aim of our project is to explore the patterns in the real estate market, mai
 
 
 # Mountain Data
+- Wanted to see if having more mountains in a city meant more expensive homes in the city.
+
+
+Figured out how many mountains are in each city and typical home prices in each city. (Bar Graph)
+![image](https://user-images.githubusercontent.com/122308689/230981682-38e802c8-2bd5-490c-936f-3c264e64e8cd.png)
+
+
+Compared typical home prices to number of mountains in the city . (Scatter Plot)
+![image](https://user-images.githubusercontent.com/122308689/230981723-eeee079f-0d77-46dc-81bf-1c5c1aca37fb.png)
+
+
+Had a radius of 10 km because mountains wouldn’t be right in a city, they would be surrounding the city.
+
+
+Found that there is a very strong correlation between the number of mountains and the home price. The R value was .76 which means there is a 76% chance that the value of homes increases based on the number of mountains. 
 
 
 # Healthcare Data
