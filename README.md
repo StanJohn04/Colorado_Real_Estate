@@ -111,7 +111,11 @@ Found that there is a very strong correlation between the number of mountains an
 
 
 # Next Steps
-
+  * Dive deeper into each category and further examine individual results from the API
+  * Use population data to better understand how different categories and home value are affected by the population of a city
+  * Explore comparisons at different geographical levels
+    * Neighborhood level
+    * State Level
 
 # Team Members
   * [Stan Johnson](https://github.com/StanJohn04)
